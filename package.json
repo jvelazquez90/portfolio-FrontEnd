@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "Ambiente prueba de typescript",
+  "main": "index.html",
+  "devDependencies": {},
+  "scripts": {
+    "start": "http-server -p 8436"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jvelazquez90/portfolio-FrontEnd.git"
+  },
+  "author": "Jorge Velazquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jvelazquez90/portfolio-FrontEnd/issues"
+  },
+  "homepage": "https://github.com/jvelazquez90/portfolio-FrontEnd#readme"
+}

@@ -1,0 +1,52 @@
+.fuente {
+    font-family: Arial, Helvetica, sans-serif;
+    /*font-size: 20px;*/
+    /*font-weight: bold;*/
+    /*text-align: center; texto centrado*/
+    /*line-height: 20px; interlineado*/
+    /*text-decoration: underline; decorado al texto*/
+    /*text-transform: capitalize; mayuscula todas las primeras. uppercase */
+    /*letter-spacing: 5px; espaciado entre letras*/
+    /* word-spacing: 5px; espaciado despues de cada letra */
+    /*text-shadow: 5px 5px #000; sombra al texto */
+}
+
+.banner{
+    /*usar porcentaje en las imagenes*/
+    height: auto;
+    width: 100%;
+    margin: auto;
+    display: block;
+    border:1px solid #000;
+}
+
+.foto-perfil { /*no usado*/
+    /*border-radius: 50%;*/
+    width: 200px;
+    height: 200px;
+    bottom: 10px;
+    left: 15px;
+    position: relative;
+}
+
+.card{
+    border-radius: 32px;
+    margin: 10px 10px;
+    padding: 20px;
+    border-color: #0a66c2;
+}
+
+.bordeado-radio{
+    border-radius: 10px;
+    background-color: #0a66c2;
+    border-color: 1px solid #0a66c2;
+}
+
+header-a-probar{
+    width: 100px;
+    height: 100px;
+    background: #3D9994;
+    color: #3D9994;
+    font-size: 30px;
+    float: left;
+}

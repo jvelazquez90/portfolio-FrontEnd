@@ -1,15 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
-        <title> Portfolio Web prueba</title>
+        <title> Portfolio Web</title>
+
+        <!------------------------------etiquetas meta ---------------------------------------------->
+        <meta charset="utf-8" />
+        <link rel="icon" href="images/foto-perfil.ico">
+        <meta name="language" content="ES">
+        <meta name="keywords" content="GIS,Ruteo,Geocodificacion">
+        <meta name="description" content="Es un perfil de prueba">
+        <meta name="author" content="Jorge Velazquez">
+        <meta name="robots" content="index">
+        <meta name="revised" content="Vienes 19 de agosto de 2022" />
+
+        <!------------------------------ Fuente ------------------------------------------------------>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet" type="text/css">
+
+        <!-------------------------------Link a hojas de estilo -------------------------------------->
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+        <!-------------------------------Boopstrap --------------------------------------------------->
+        <link rel="stylesheet" href="dist/bootstrap/css/bootstrap.min.css">
     </head>
     <header>
-        <title>Portfolio Web</title>
-        <img src="images/argentina-programa-logo.jpg" alt="Logo de Argentina Programa">
-        <a href="https://facebook.com/jorgevelazquezcarp">Facebook</a>
-        <a href="https://instagram.com/jvelazquez_90">Instagram</a>
-        <a href="https://linkedin.com/in/jorge-velazquez-fernandez">Linkedin</a>
-        <input type="button" value="Login" name="Login">
+        <div>
+            <ul>
+                <li><img src="images/argentina-programa-logo.jpg" width="150px" height="100px" alt="Logo de Argentina Programa"></li>
+                <li><a href="https://www.facebook.com/jorgevelazquezcarp">Facebook</a></li>
+                <li><a href="https://instagram.com/jvelazquez_90">Instagram</a></li>
+                <li><a href="https://linkedin.com/in/jorge-velazquez-fernandez">Linkedin</a></li>
+                <li><button type="button" class="btn btn-outline-primary">Login</button></li>
+            </ul>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -17,69 +39,156 @@
             </ul>
         </nav>
     </header>
-    <body>
-        <img src="images/header.jpg" alt="Header">
-        <img src="images/foto-perfil.jpg" alt="Foto de perfil">
-        <h1> Jorge Antonio Velazquez Fernandez</h1>
-        <h2> Técnico GIS</h2>
+    <body class="fuente">
+        <!------------------------------ Banner ------------------------------------------------------>
+        <div>
+            <img class="banner" src="images/banner.jpg" alt="Header">
+        </div>
+        
+        <!------------------------------ Foto de perfil ---------------------------------------------->
+        <div>
+            <div class="foto-perfil">
+                <img src="images/foto-perfil.jpg" class="rounded-circle" width="200px" height="200px" alt="Foto de perfil">
+            </div>
+        </div>
+        <div>
+            <h1> Jorge Antonio Velazquez Fernandez</h1>
+        </div>
+        <div>
+            <h2> Técnico GIS</h2>
+        </div>
         <h3> Información personal:</h3>
-        <ul>
-            <li> Fecha de Nacimiento: 25 de Julio de 1990 </li>
-            <li> Nacionalidad: paraguaya </li>
-            <li> Email: jvelazquez.tab@gmail.com </li>
-            <li> Lugar de residencia: Moreno, Buenos Aires, Argentina </li>
-        </ul>
+        <div class="card">
+            <ul>
+                <li> Fecha de Nacimiento: 25 de Julio de 1990 </li>
+                <li> Nacionalidad: paraguaya </li>
+                <li> Email: jvelazquez.tab@gmail.com </li>
+                <li> Lugar de residencia: Moreno, Buenos Aires, Argentina </li>
+            </ul>
+        </div>
     </body>
     <section>
         <article>
-            <h2> Acerca de </h2>
-            <p> Técnico en Sistemas de Información Geográfica, apasionado por los mapas.</p>
-            <p> En los años que he trabajado me ha tocado realizar diversas tareas en
-                lo referido a GIS, desde la edición con las herramientas de escritorio y
-                creación de <strong>mapas</strong>, hasta la implementación de una <strong>base de datos
-                    geoespacial, servidores de mosaicos, de enrutamiento y de
-                    geocodificación.</strong><br>
-                Elijo preferentemente el software libre y sistema operativo Linux.<br>
-                Me gusta explorar, conocer nuevos lenguajes de programación,
-                implementar mis ideas o investigación en el área que me toca estar,
-                mejorar mi trabajo y conocimientos día a día.</p>
+            <div class="card">
+                <h2> Acerca de </h2>
+                <p> Técnico en Sistemas de Información Geográfica, apasionado por los mapas.</p>
+                <p> En los años que he trabajado me ha tocado realizar diversas tareas en
+                    lo referido a GIS, desde la edición con las herramientas de escritorio y
+                    creación de <strong>mapas</strong>, hasta la implementación de una <strong>base de datos
+                        geoespacial, servidores de mosaicos, de enrutamiento y de
+                        geocodificación.</strong><br>
+                    Elijo preferentemente el software libre y sistema operativo Linux.<br>
+                    Me gusta explorar, conocer nuevos lenguajes de programación,
+                    implementar mis ideas o investigación en el área que me toca estar,
+                    mejorar mi trabajo y conocimientos día a día.</p>
+            </div>
         </article>
         <article>
-            <h2> Experiencia </h2>
-            <ul>
-                <li>
-                    <div>
-                        <p> Encargado del Área de cartografía UNIGIS</p>
-                        <p> Junio 2016 hasta la actualidad </p>
-                        <img src="images/unigis.jpg" alt="logo unigis">
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <p> Municipalidad del Pilar</p>
-                        <p> Departamento de GIS - Dirección de Informática </p>
-                        <p> Abril 2013 - Mayo 2016 </p>
-                        <img src="images/pilar.jpg" alt="logo municipalidad">
-                    </div>
-                </li>
-            </ul>
+            <div class="card">
+                <h2> Experiencia </h2>
+                <ul>
+                    <li>
+                        <div>
+                            <p> Encargado del Área de cartografía UNIGIS</p>
+                            <p> Junio 2016 hasta la actualidad </p>
+                            <img src="images/unigis.jpg" width="25%" height="25%" alt="logo unigis">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p> Municipalidad del Pilar</p>
+                            <p> Departamento de GIS - Dirección de Informática </p>
+                            <p> Abril 2013 - Mayo 2016 </p>
+                            <img src="images/pilar.jpg" width="75px" height="100px" alt="logo municipalidad">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p> Universidad Nacional General Sarmiento</p>
+                            <p> Ayudante del profesor en la materia Programas de SIG </p>
+                            <p> Año 2015 </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </article>
         <article>
             <h2> Aptitudes </h2>
-
+            <div class="card">
+                <h4> Herramientas</h4>
+                <ul>
+                    <li>QGIS</li>
+                    <li>Base de Datos Postgresql/Postgis</li>
+                    <li>ArcGIS</li>
+                    <li>Herramientas OpenStreetMap</li>
+                    <li>GDAL/OGR</li>
+                    <li>Leaflet</li>
+                    <li>OSRM</li>
+                    <li>Graphhopper</li>
+                </ul>
+                <h4>Lenguajes utilizados</h4>
+                <ul>
+                    <li>SQL</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                </ul>
+                <h4>Sistemas Operativos</h4>
+                <ul>
+                    <li>Windows</li>
+                    <li>Ubuntu</li>
+                    <li>Ubuntu Server</li>
+                </ul>
+            </div>
         </article>
         <article>
             <h2> Educación </h2>
+            <div class="card">
+                <ul>
+                    <li>
+                        <strong>
+                            Técnico en Sistemas de Información Geográfica (2011-2014) - Universidad Nacional General Sarmiento
+                        </strong>
+                    </li>
+                    <li>Curso de Geoserver y publicación de capas</li>
+                    <li>Curso de base de datos Postgis</li>
+                    <li>Curso de AutoCAD 2D</li>
+                    <li>Curso de Python 3 - UTN</li>
+                    <li>Curso JAVA</li>
+                    <li>Curso de Git/GitHub</li>
+                    <li>Cultura de Servicio y Cultura del Cliente basado en Disney</li>
+                    <li>
+                        Geomarketing con ArcGIS: Determinación de ubicaciones óptimas para la apertura de 
+                        instalaciones comerciales
+                    </li>
+                    <li>Curso de Project Manager</li>
+                </ul>
+            </div>
         </article>
         <article>
-            <h2> Hard & Soft Skills </h2>
+            <div class="card">
+                <h2> Hard & Soft Skills </h2>
+            </div>
         </article>
         <article>
             <h2> Proyectos </h2>
+            <div class="card">
+                <ul>
+                    <li>Detección del Derecho de construcción</li>
+                    <li>Diseño e implementación de Base de Datos Geoespacial</li>
+                    <li>Implementación de servidor de mosaicos personalizado</li>
+                    <li>Instalación e implementación de geocodificador personalizado</li>
+                </ul>
+            </div>
+        </article>
+        <article>
+            <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-58.785867691040046%2C-34.608910351485655%2C-58.737974166870124%2C-34.58877471813489&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=15/-34.5988/-58.7619">Ver mapa más grande</a></small>
         </article>
     </section>
     <aside>
+        <p> Contenido extra</p>
     </aside>
     <footer>
+        <a href="https://linkedin.com/in/jorge-velazquez-fernandez">Linkedin</a>
+        <h4> Copyright - Todos los derechos reservados </h4>
     </footer>
 </html>
