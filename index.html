@@ -21,44 +21,59 @@
 
         <!-------------------------------Boopstrap --------------------------------------------------->
         <link rel="stylesheet" href="dist/bootstrap/css/bootstrap.min.css">
+
+        <!-------------------------------JavaScript --------------------------------------------------->
+        <script>
+            function CambiarParrafo(){
+                document.getElementsById("edit-acercade").style.display="block";
+                let texto = document.getElementsById("texto-acercade").innerText;
+                console.log(texto);
+            }
+
+            function myFunctions2(valor){
+                document.getElementsById("text-acercade").innerText=valor;
+            }
+        </script>
     </head>
+        <!---------------------------------- Header --------------------------------------------------->
     <header>
-        <div>
-            <ul>
-                <li><img src="images/argentina-programa-logo.jpg" width="150px" height="100px" alt="Logo de Argentina Programa"></li>
-                <li><a href="https://www.facebook.com/jorgevelazquezcarp">Facebook</a></li>
-                <li><a href="https://instagram.com/jvelazquez_90">Instagram</a></li>
-                <li><a href="https://linkedin.com/in/jorge-velazquez-fernandez">Linkedin</a></li>
-                <li><button type="button" class="btn btn-outline-primary">Login</button></li>
-            </ul>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <!--<li><a href="index.html">Home</a></li>-->
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                <img src="images/argentina-programa-logo.jpg" style="width:90px;" alt="Logo" class="logo-argentina-programa"></a>
+              <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                </ul>
+                <form class="d-flex">
+                  <button class="btn btn-primary" type="button">Login</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
-    <body class="fuente">
+
+    <body id="body">
         <!------------------------------ Banner ------------------------------------------------------>
-        <div>
-            <img class="banner" src="images/banner.jpg" alt="Header">
-        </div>
-        
+        <div class="bordeado">
+            <div>
+                <img class="banner" src="images/banner.jpg" alt="Header">
+            </div>
+            
         <!------------------------------ Foto de perfil ---------------------------------------------->
-        <div>
-            <div class="foto-perfil">
-                <img src="images/foto-perfil.jpg" class="rounded-circle" width="200px" height="200px" alt="Foto de perfil">
+            <div>
+                <div class="foto-perfil">
+                    <img src="images/foto-perfil.jpg" class="rounded-circle" width="200px" height="200px" alt="Foto de perfil">
+                </div>
+            </div>
+            <div>
+                <h1> Jorge Antonio Velazquez Fernandez</h1>
+            </div>
+            <div>
+                <h2> Técnico GIS</h2>
             </div>
         </div>
-        <div>
-            <h1> Jorge Antonio Velazquez Fernandez</h1>
-        </div>
-        <div>
-            <h2> Técnico GIS</h2>
-        </div>
-        <h3> Información personal:</h3>
-        <div class="card">
+        <!------------------------------ Información personal ---------------------------------------------->
+        <h2> Información personal:</h2>
+        <div class="bordeado">
             <ul>
                 <li> Fecha de Nacimiento: 25 de Julio de 1990 </li>
                 <li> Nacionalidad: paraguaya </li>
@@ -66,129 +81,182 @@
                 <li> Lugar de residencia: Moreno, Buenos Aires, Argentina </li>
             </ul>
         </div>
-    </body>
-    <section>
-        <article>
-            <div class="card">
+        <!------------------------------------ Acerca de --------------------------------------------------->
+        <section>
+            <article>
                 <h2> Acerca de </h2>
-                <p> Técnico en Sistemas de Información Geográfica, apasionado por los mapas.</p>
-                <p> En los años que he trabajado me ha tocado realizar diversas tareas en
-                    lo referido a GIS, desde la edición con las herramientas de escritorio y
-                    creación de <strong>mapas</strong>, hasta la implementación de una <strong>base de datos
-                        geoespacial, servidores de mosaicos, de enrutamiento y de
-                        geocodificación.</strong><br>
-                    Elijo preferentemente el software libre y sistema operativo Linux.<br>
-                    Me gusta explorar, conocer nuevos lenguajes de programación,
-                    implementar mis ideas o investigación en el área que me toca estar,
-                    mejorar mi trabajo y conocimientos día a día.</p>
-            </div>
-        </article>
-        <article>
-            <div class="card">
+                <button type="button" class="btn btn-outline-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                        <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+                    </svg>
+                </button>
+                <div class="bordeado" onclick="CambiarParrafo()">
+                    <p> Técnico en Sistemas de Información Geográfica, apasionado por los mapas.</p>
+                    <p> En los años que he trabajado me ha tocado realizar diversas tareas en
+                        lo referido a GIS, desde la edición con las herramientas de escritorio y
+                        creación de <strong>mapas</strong>, hasta la implementación de una <strong>base de datos
+                            geoespacial, servidores de mosaicos, de enrutamiento y de
+                            geocodificación.</strong><br>
+                        Elijo preferentemente el software libre y sistema operativo Linux.<br>
+                        Me gusta explorar, conocer nuevos lenguajes de programación,
+                        implementar mis ideas o investigación en el área que me toca estar,
+                        mejorar mi trabajo y conocimientos día a día.</p>
+                </div>
+                <div>
+                    <input id="edit-acercade" type="text" oninput="myFunctions2(this.value)" style="display:none">
+                </div>
+            </article>
+            <!------------------------------ Experiencia --------------------------------------------------->
+            <article>
                 <h2> Experiencia </h2>
-                <ul>
-                    <li>
-                        <div>
-                            <p> Encargado del Área de cartografía UNIGIS</p>
-                            <p> Junio 2016 hasta la actualidad </p>
-                            <img src="images/unigis.jpg" width="25%" height="25%" alt="logo unigis">
+                <div class="bordeado">
+                    <div class="row">
+                        <div class="col-sm-6 p-3">
+                            <ul>
+                                <li>
+                                    <p> Encargado del Área de cartografía UNIGIS</p>
+                                    <p> Junio 2016 hasta la actualidad </p>
+                                </li>
+                            </ul>
                         </div>
-                    </li>
-                    <li>
-                        <div>
-                            <p> Municipalidad del Pilar</p>
-                            <p> Departamento de GIS - Dirección de Informática </p>
-                            <p> Abril 2013 - Mayo 2016 </p>
-                            <img src="images/pilar.jpg" width="75px" height="100px" alt="logo municipalidad">
+                        <div class="col-sm-6 p-3">
+                            <img src="images/unigis.jpg" class="logo-unigis float-start" alt="logo unigis">
                         </div>
-                    </li>
-                    <li>
-                        <div>
-                            <p> Universidad Nacional General Sarmiento</p>
-                            <p> Ayudante del profesor en la materia Programas de SIG </p>
-                            <p> Año 2015 </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 p-3">
+                            <ul>
+                                <li>
+                                    <p> Municipalidad del Pilar</p>
+                                    <p> Departamento de GIS - Dirección de Informática </p>
+                                    <p> Abril 2013 - Mayo 2016 </p>
+                                </li>
+                            </ul>
                         </div>
-                    </li>
-                </ul>
-            </div>
-        </article>
-        <article>
-            <h2> Aptitudes </h2>
-            <div class="card">
-                <h4> Herramientas</h4>
-                <ul>
-                    <li>QGIS</li>
-                    <li>Base de Datos Postgresql/Postgis</li>
-                    <li>ArcGIS</li>
-                    <li>Herramientas OpenStreetMap</li>
-                    <li>GDAL/OGR</li>
-                    <li>Leaflet</li>
-                    <li>OSRM</li>
-                    <li>Graphhopper</li>
-                </ul>
-                <h4>Lenguajes utilizados</h4>
-                <ul>
-                    <li>SQL</li>
-                    <li>Python</li>
-                    <li>Java</li>
-                </ul>
-                <h4>Sistemas Operativos</h4>
-                <ul>
-                    <li>Windows</li>
-                    <li>Ubuntu</li>
-                    <li>Ubuntu Server</li>
-                </ul>
-            </div>
-        </article>
-        <article>
-            <h2> Educación </h2>
-            <div class="card">
-                <ul>
-                    <li>
-                        <strong>
-                            Técnico en Sistemas de Información Geográfica (2011-2014) - Universidad Nacional General Sarmiento
-                        </strong>
-                    </li>
-                    <li>Curso de Geoserver y publicación de capas</li>
-                    <li>Curso de base de datos Postgis</li>
-                    <li>Curso de AutoCAD 2D</li>
-                    <li>Curso de Python 3 - UTN</li>
-                    <li>Curso JAVA</li>
-                    <li>Curso de Git/GitHub</li>
-                    <li>Cultura de Servicio y Cultura del Cliente basado en Disney</li>
-                    <li>
-                        Geomarketing con ArcGIS: Determinación de ubicaciones óptimas para la apertura de 
-                        instalaciones comerciales
-                    </li>
-                    <li>Curso de Project Manager</li>
-                </ul>
-            </div>
-        </article>
-        <article>
-            <div class="card">
+                        <div class="col-sm-6 p-3">
+                            <img src="images/pilar.jpg" class="logo-pilar float-start" alt="logo municipalidad">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 p-3">
+                            <ul>
+                                <li>
+                                    <p> Universidad Nacional General Sarmiento</p>
+                                    <p> Ayudante del profesor en la materia Programas de SIG </p>
+                                    <p> Año 2015 </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 p-3">
+                            <img src="images/logo-ungs.png" class="logo-ungs float-start" alt="logo ungs">
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!---------------------------------- Aptitudes ------------------------------------------------->
+            <article>
+                <h2> Aptitudes </h2>
+                <div class="bordeado">
+                    <h4> Herramientas</h4>
+                    <ul>
+                        <li>QGIS</li>
+                        <li>Base de Datos Postgresql/Postgis</li>
+                        <li>ArcGIS</li>
+                        <li>Herramientas OpenStreetMap</li>
+                        <li>GDAL/OGR</li>
+                        <li>Leaflet</li>
+                        <li>OSRM</li>
+                        <li>Graphhopper</li>
+                    </ul>
+                    <h4>Lenguajes utilizados</h4>
+                    <ul>
+                        <li>SQL</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                    </ul>
+                    <h4>Sistemas Operativos</h4>
+                    <ul>
+                        <li>Windows</li>
+                        <li>Ubuntu</li>
+                        <li>Ubuntu Server</li>
+                    </ul>
+                </div>
+            </article>
+            <!---------------------------------- Educación ------------------------------------------------->
+            <article>
+                <h2> Educación </h2>
+                <div class="bordeado">
+                    <ul>
+                        <li>
+                            <strong>
+                                Técnico en Sistemas de Información Geográfica (2011-2014) - Universidad Nacional General Sarmiento
+                            </strong>
+                        </li>
+                        <li>Curso de Geoserver y publicación de capas</li>
+                        <li>Curso de base de datos Postgis</li>
+                        <li>Curso de AutoCAD 2D</li>
+                        <li>Curso de Python 3 - UTN</li>
+                        <li>Curso JAVA</li>
+                        <li>Curso de Git/GitHub</li>
+                        <li>Cultura de Servicio y Cultura del Cliente basado en Disney</li>
+                        <li>
+                            Geomarketing con ArcGIS: Determinación de ubicaciones óptimas para la apertura de 
+                            instalaciones comerciales
+                        </li>
+                        <li>Curso de Project Manager</li>
+                    </ul>
+                </div>
+            </article>
+            <!--------------------------------- Habilidades ------------------------------------------------>
+            <article>
                 <h2> Hard & Soft Skills </h2>
+                <div class="bordeado">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped" style="width:80%">
+                            Base de datos Geográfica
+                        </div>
+                    </div>
+                    <br>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped" style="width:70%">
+                            Herramientas OpenStreetMap
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!---------------------------------- Proyectos ------------------------------------------------->
+            <article>
+                <h2> Proyectos </h2>
+                <div class="bordeado">
+                    <ul>
+                        <li>Detección del Derecho de construcción</li>
+                        <li>Diseño e implementación de Base de Datos Geoespacial</li>
+                        <li>Implementación de servidor de mosaicos personalizado</li>
+                        <li>Instalación e implementación de geocodificador personalizado</li>
+                    </ul>
+                </div>
+            </article>
+            <!------------------------------ Apartado sin clasificacion ------------------------------------->
+            <div class="bordeado">
+                <article>
+                    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-58.785867691040046%2C-34.608910351485655%2C-58.737974166870124%2C-34.58877471813489&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=15/-34.5988/-58.7619">Ver mapa más grande</a></small>
+                </article>
             </div>
-        </article>
-        <article>
-            <h2> Proyectos </h2>
-            <div class="card">
-                <ul>
-                    <li>Detección del Derecho de construcción</li>
-                    <li>Diseño e implementación de Base de Datos Geoespacial</li>
-                    <li>Implementación de servidor de mosaicos personalizado</li>
-                    <li>Instalación e implementación de geocodificador personalizado</li>
-                </ul>
-            </div>
-        </article>
-        <article>
-            <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-58.785867691040046%2C-34.608910351485655%2C-58.737974166870124%2C-34.58877471813489&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=15/-34.5988/-58.7619">Ver mapa más grande</a></small>
-        </article>
-    </section>
-    <aside>
-        <p> Contenido extra</p>
-    </aside>
-    <footer>
-        <a href="https://linkedin.com/in/jorge-velazquez-fernandez">Linkedin</a>
-        <h4> Copyright - Todos los derechos reservados </h4>
-    </footer>
+        </section>
+        <footer>
+            <h2>Redes Sociales</h2>
+            <ul>
+                <li>
+                    <a href="https://linkedin.com/in/jorge-velazquez-fernandez">Linkedin</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/jorgevelazquezcarp">Facebook</a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/jvelazquez_90">Instagram</a>
+                </li>
+            </ul>
+            <h4> Copyright - Todos los derechos reservados </h4>
+        </footer>
+    </body>
 </html>

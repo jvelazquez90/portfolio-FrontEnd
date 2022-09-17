@@ -1,3 +1,11 @@
+#body{
+    background-color: #F3F2EF;
+}
+
+h2 {
+    margin-left: 30px;
+}
+
 .fuente {
     font-family: Arial, Helvetica, sans-serif;
     /*font-size: 20px;*/
@@ -11,36 +19,39 @@
     /*text-shadow: 5px 5px #000; sombra al texto */
 }
 
+.bordeado{
+	border-style: solid;
+	border-radius: 12px;
+    border-color: #0a66c2;
+    background-color: #FFFF;
+    border-width: 1px;
+    margin: 10px 10px;
+    padding: 20px;
+}
+
 .banner{
     /*usar porcentaje en las imagenes*/
     height: auto;
     width: 100%;
     margin: auto;
     display: block;
-    border:1px solid #000;
 }
 
 .foto-perfil { /*no usado*/
     /*border-radius: 50%;*/
     width: 200px;
     height: 200px;
-    bottom: 10px;
-    left: 15px;
+    bottom: 30px;
+    left: 25px;
     position: relative;
 }
-
-.card{
-    border-radius: 32px;
-    margin: 10px 10px;
-    padding: 20px;
-    border-color: #0a66c2;
-}
-
+/*
 .bordeado-radio{
     border-radius: 10px;
     background-color: #0a66c2;
-    border-color: 1px solid #0a66c2;
+    border-color: 1px solid #0a66c2
 }
+
 
 header-a-probar{
     width: 100px;
@@ -49,4 +60,40 @@ header-a-probar{
     color: #3D9994;
     font-size: 30px;
     float: left;
+}
+*/
+
+.logo-argentina-programa{
+    border-radius: 45%;
+    width: "10px";
+    height: "5px";
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.logo-unigis{
+    width: 17%;
+    height: 70px;
+    left: 35px;
+    position: relative;
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.logo-pilar{
+    width: 120px;
+    height: 90px;
+    left:25px;
+    position: relative;
+    text-align: center;
+}
+
+.logo-ungs{
+    width: 170px;
+    height: 60px;
+    left: 10px;
+    position: relative;
+    text-align: center;
 }
